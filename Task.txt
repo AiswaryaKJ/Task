@@ -1,0 +1,43 @@
+GITHUB LINK : https://github.com/AiswaryaKJ/Task
+
+Inheritance
+..................
+1.Single Level Inheritance : A Son class inherits from a Father class to reuse basic identity details.
+Multilevel Inheritance : A puppy class inherits from Dog, which inherits from Animal, forming a chain.
+Hierarchical Inheritance : Classes add & sub inherit from a common Number class class.
+Method Overloading and Method Overriding calculate() is overloaded with different parameters and overridden in a subclass to customize logic.
+
+
+Abstraction & Interface
+...................
+1. Smart Appliance Controller :
+Abstract Class: Class Appliance with methods like turnOn(), turnOff(), setTimer().
+Subclasses: SmartFan, SmartLight, SmartAC.
+2.Payment : Abstract Payment class with subclasses like Credit, debit, Account implementing pay() method and store this transaction in a Arraylist.
+3.Design a system for smart vehicles that combines navigation, entertainment, and diagnostics using multiple interfaces.
+🔹 Requirements:
+Create three interfaces:
+Navigable with methods startNavigation(), stopNavigation()
+Playable with methods playMusic(), stopMusic()
+Diagnosable with methods runDiagnostics(), showReport()
+Create a class SmartCar that implements all three interfaces and provides concrete implementations for each method.
+
+
+Encapsulation
+...................
+1.Digital Wallet : Keep balance and transaction history private.Provide methods like addFunds(), makePayment(), and getBalance() with validation checks.
+2.Fitness Tracker App : Encapsulate health metrics like heart rate, steps, and calories.Allow controlled updates via methods like updateSteps() or logWorkout().
+3.Vehicle Speed Monitor : Keep current speed and max speed private.Provide methods like accelerate(), brake(), and getSpeed() with safety checks.
+
+
+Collections
+...................
+Design a grocery basket system that allows users to manage items using Java’s Collection Framework.
+🔹 Requirements:
+Use a List<String> to store grocery items.
+addItem(String item) – adds an item to the basket
+removeItem(String item) – removes an item from the basket
+viewBasket() – displays all items in the basket
+sortBasket() – sorts items alphabetically
+2.Student Details : TreeSet Store student names or IDs in a TreeSet to maintain sorted order automatically.
+3.Department Subjects : Maintain insertion order of subjects offered by a department using LinkedHashSet.
