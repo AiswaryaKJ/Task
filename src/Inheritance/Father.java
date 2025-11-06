@@ -1,8 +1,9 @@
 package Inheritance;
 
 class son {
-	void fname() {
 	String name="Jon";
+	void fname() {
+	
 	System.out.println("Name:"+name);
 }	}
 public class Father extends son{
