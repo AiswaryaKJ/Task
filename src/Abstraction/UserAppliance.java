@@ -1,27 +1,22 @@
 package Abstraction;
 
 class SmartFan extends Appliance{
-
 	@Override
 	void turnOn() {
 		// TODO Auto-generated method stub
 		System.out.println("Fan On");
 	}
-
 	@Override
 	void turnOff() {
 		// TODO Auto-generated method stub
 		System.out.println("Fan Off");
 	}
-
 	@Override
 	void setTimer(int x) {
 		// TODO Auto-generated method stub
 		System.out.println("Timer Set(Fan)"+x+"Minutes");
-	}
-	
+	}	
 }
-
 class SmartLight extends Appliance{
 
 	@Override
@@ -73,6 +68,7 @@ public class UserAppliance{
 	SmartAC sa=new SmartAC();
 	sf.turnOn();
 	sa.setTimer(10);
+	sf.command();
 	
 	}
 
