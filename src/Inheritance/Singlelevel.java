@@ -27,7 +27,6 @@ class Son extends Father {
     }
 }
 
-// Main class
 public class Singlelevel {
     public static void main(String[] args) {
 

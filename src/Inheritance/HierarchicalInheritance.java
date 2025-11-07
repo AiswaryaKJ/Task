@@ -2,7 +2,7 @@ package Inheritance;
 import java.util.*;
 
 class NumberBase {
-    protected List<Integer> numbers;  // protected → child classes can access
+    public List<Integer> numbers;  
 
     public NumberBase(List<Integer> numbers) {
         this.numbers = new ArrayList<>(numbers);  // defensive copy
@@ -13,7 +13,6 @@ class NumberBase {
     }
 }
 
-// Child 1 → adds a number to the list
 class AddNumbers extends NumberBase {
     public AddNumbers(List<Integer> numbers) {
         super(numbers);
@@ -25,7 +24,6 @@ class AddNumbers extends NumberBase {
     }
 }
 
-// Child 2 → sorts the list
 class SortNumbers extends NumberBase {
     public SortNumbers(List<Integer> numbers) {
         super(numbers);
@@ -37,7 +35,6 @@ class SortNumbers extends NumberBase {
     }
 }
 
-// Child 3 → filters only even numbers
 class FilterEven extends NumberBase {
     public FilterEven(List<Integer> numbers) {
         super(numbers);
@@ -52,7 +49,6 @@ class FilterEven extends NumberBase {
     }
 }
 
-// Main class
 public class HierarchicalInheritance {
     public static void main(String[] args) {
 

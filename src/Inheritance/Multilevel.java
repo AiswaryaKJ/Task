@@ -1,9 +1,9 @@
 package Inheritance;
 class Animal {
-    private String species;        // private
-    protected int age;             // protected
-              String habitat;      // default
-    public boolean isDomestic;     // public
+    String species;        
+    int age;             
+    String habitat;     
+    boolean isDomestic;     
 
     public Animal(String species, int age, boolean isDomestic, String habitat) {
         this.species = species;
@@ -12,18 +12,18 @@ class Animal {
         this.habitat = habitat;
     }
 
-    protected void eat() {
+    void eat() {
         System.out.println("[Animal] Eating food...");
     }
 
-    public String getSpecies() {
+    String getSpecies() {
         return species; 
     }
 }
 
 class Dog extends Animal {
-    protected String breed;   
-    private int training;     
+    String breed;   
+    int training;     
 
     public Dog(String sp, int age, boolean dom, String hab, String breed, int tr) {
         super(sp, age, dom, hab);
@@ -32,12 +32,12 @@ class Dog extends Animal {
     }
 
     @Override
-    protected void eat() {
+   void eat() {
         super.eat();
         System.out.println("[Dog] Eating dog food...");
     }
 
-    protected int getTraining() {
+   int getTraining() {
         return training;
     }
 }
