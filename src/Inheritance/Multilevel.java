@@ -68,6 +68,6 @@ public class Multilevel {
         Puppy p = new Puppy("Canine", 1, true, "Home", "Labrador", 3);
         p.showDetails();
         System.out.println();
-        p.eat();  // overridden chain
+        p.eat(); 
     }
 }
